@@ -40,7 +40,7 @@ function genPerm(arr) {
         // Check if current is sorted
         if (isSorted(permutation)) {
             for (let i =0; i < a.length; i++) { 
-                a[i] = pemutation[i]; 
+                a[i] = permutation[i]; 
             }
             //Return for perm tried on sorting
             return count; 
