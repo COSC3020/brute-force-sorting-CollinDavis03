@@ -32,9 +32,10 @@ function genPerm(arr) {
 }
     //gen all possible perm for input
     const permutations = genPerm(a); 
-    let count = 0; 
+    let count = 0;
+    
     //loop for each Perm
-    for (const permutations of permutations) {
+    for (const permutation of permutations) {
         count++; // count for each Perm
         // Check if current is sorted
         if (isSorted(permutation)) {
