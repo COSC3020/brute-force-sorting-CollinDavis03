@@ -20,3 +20,15 @@ randomly without memory instead of systematically trying them?
 
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. Add your answer to this markdown file.
+
+
+## Answer 
+We know the best-case scenario for this code would be _O_(n) and that's if the array is already sorted when you put it in. It would just have to look at each element in the array and since it will be sorted the runtime will be based on the amount of elements there are.
+
+The worst-case scenario is infinite time or _O_(n!). The reason is because it will go on forever and there might not be an end to the sorting and even when it is sorted it might not be correct either. With this, it might never stop sorting because it has no way to see that it is sorted completely and is going to keep on going until it eventually sorts it. Which might be infinite. 
+
+## Sources
+I watched a YouTube (https://www.youtube.com/watch?v=t2Q2tc0V8SY) video on brute force sorting to get a better understanding of how it works. I also looked at Nolan Berg's and Cian Melker's repos so I could get a better understanding of how to write the code, which I implemented myself. The only thing I used AI on was the change for [a-1] to arr[i-1] because I was confused about what the error message was saying I asked ChatGPT about it and it said to change this and then my code worked. 
+
+## Plagrism Statement 
+“I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.”
