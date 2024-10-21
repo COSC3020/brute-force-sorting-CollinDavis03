@@ -3,7 +3,7 @@ function permutationSort(a) {
     function isSorted(arr) {
         for (let i = 1; i < arr.length; i++) { 
             //If a is greater than another. It is not sorted. 
-            if ([a-1] > arr[i]) {
+            if (arr[i-1] > arr[i]) {
                 return false;
             }
         }
