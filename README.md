@@ -27,6 +27,12 @@ We know the best-case scenario for this code would be _O_(n) and that's if the a
 
 The worst-case scenario is infinite time or _O_(n!). The reason is because it will go on forever and there might not be an end to the sorting and even when it is sorted it might not be correct either. With this, it might never stop sorting because it has no way to see that it is sorted completely and is going to keep on going until it eventually sorts it. Which might be infinite. 
 
+Number permutations there are is n! because we get the length of the array which is n and then it goes down the list of the array multiplying one another which gives you n factorial. This is in the GenPerm function. 
+
+The work being done is $O(n)$ because in the isSorted function, it checks if each permutation is sorted. This function iterates over the array once making a comparison of each adjacent pair of elements. 
+
+so the time would be $O(n x n!)$ = $O(n!)$
+
 ## Sources
 I watched a YouTube (https://www.youtube.com/watch?v=t2Q2tc0V8SY) video on brute force sorting to get a better understanding of how it works. I also looked at Nolan Berg's and Cian Melker's repos so I could get a better understanding of how to write the code, which I implemented myself. All the comments you see in the code are generalizations of what their code did but I wrote it in my own words. The only thing I used AI on was the change for [a-1] to arr[i-1] because I was confused about what the error message was saying I asked ChatGPT about it and it said to change this and then my code worked. 
 
