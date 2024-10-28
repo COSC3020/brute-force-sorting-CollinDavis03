@@ -33,8 +33,10 @@ The work being done is $O(n)$ because in the isSorted function, it checks if eac
 
 so the time would be $O(n x n!)$ = $O(n!)$
 
+## Mistake
+If I am going to be honest I do not know why I wrote arr[a]. I think I had in my head to write arr[i-1] but for some reason, I typed arr[a]. When I saw the error with the counter-example I was a little lost on what it was asking for. I tried doing the debugging myself and then I gave it three tries and then I gave up after that and asked ChatGPT what it was asking. Then it said I had arr[a] instead of arr[i-1] and I thought that was my mistake. After that, I started to just read each line of my code and make sure I had it where I want it to be. It was a simple typo on my part and I was not reading my code deeply enough to realize that I had made that mistake. 
 ## Sources
-I watched a YouTube (https://www.youtube.com/watch?v=t2Q2tc0V8SY) video on brute force sorting to get a better understanding of how it works. I also looked at Nolan Berg's and Cian Melker's repos so I could get a better understanding of how to write the code, which I implemented myself. All the comments you see in the code are generalizations of what their code did but I wrote it in my own words. The only thing I used AI on was the change for [a-1] to arr[i-1] because I was confused about what the error message was saying I asked ChatGPT about it and it said to change this and then my code worked. 
+I watched a YouTube (https://www.youtube.com/watch?v=t2Q2tc0V8SY) video on brute force sorting to better understand how it works. I also looked at Nolan Berg's and Cian Melker's repos so I could get a better understanding of how to write the code, which I implemented myself. All the comments you see in the code are generalizations of what their code did but I wrote it in my own words. The only thing I used AI on was the change for [a-1] to arr[i-1] because I was confused about what the error message was saying I asked ChatGPT about it and it said to change this and then my code worked. 
 
 ## Plagrism Statement 
 “I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.”
