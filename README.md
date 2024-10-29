@@ -27,11 +27,12 @@ We know the best-case scenario for this code would be _O_(n) and that's if the a
 
 The worst-case scenario is infinite time or _O_(n!). The reason is because it will go on forever and there might not be an end to the sorting and even when it is sorted it might not be correct either. With this, it might never stop sorting because it has no way to see that it is sorted completely and is going to keep on going until it eventually sorts it. Which might be infinite. 
 
-Number permutations there are is n! because we get the length of the array which is n and then it goes down the list of the array multiplying one another which gives you n factorial. This is in the GenPerm function. 
+The number of permutations is n! because we get the length of the array, which is n, and then it goes down the list of the arrays multiplying one another, which gives you n factorial. This is in the GenPerm function. 
 
-The work being done is $O(n)$ because in the isSorted function, it checks if each permutation is sorted. This function iterates over the array once making a comparison of each adjacent pair of elements. 
+The work being done is $O(n)$ because the isSorted function checks if each permutation is sorted. This function iterates over the array once, comparing each adjacent pair of elements. 
 
-so the time would be $O(n x n!)$ = $O(n!)$
+so the time would be $O(n x n!)$ = $O(n!)$. This is the worst-case. 
+
 
 ## Mistake
 If I am going to be honest I do not know why I wrote arr[a]. I think I had in my head to write arr[i-1] but for some reason, I typed arr[a]. When I saw the error with the counter-example I was a little lost on what it was asking for. I tried doing the debugging myself and then I gave it three tries and then I gave up after that and asked ChatGPT what it was asking. Then it said I had arr[a] instead of arr[i-1] and I thought that was my mistake. After that, I started to just read each line of my code and make sure I had it where I want it to be. It was a simple typo on my part and I was not reading my code deeply enough to realize that I had made that mistake. 
