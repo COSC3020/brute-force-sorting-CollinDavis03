@@ -31,8 +31,7 @@ The number of permutations is n! because we get the length of the array, which i
 
 The work being done is $O(n)$ because the isSorted function checks if each permutation is sorted. This function iterates over the array once, comparing each adjacent pair of elements. 
 
-so the time would be $O(n x n!)$ = $O(n!)$. This is the worst-case. 
-
+With those added together, you would get $O(n + n!)$. This would give us $O(n!)$ as the worst-case scenario for this function. 
 
 ## Mistake
 If I am going to be honest I do not know why I wrote arr[a]. I think I had in my head to write arr[i-1] but for some reason, I typed arr[a]. When I saw the error with the counter-example I was a little lost on what it was asking for. I tried doing the debugging myself and then I gave it three tries and then I gave up after that and asked ChatGPT what it was asking. Then it said I had arr[a] instead of arr[i-1] and I thought that was my mistake. After that, I started to just read each line of my code and make sure I had it where I want it to be. It was a simple typo on my part and I was not reading my code deeply enough to realize that I had made that mistake. 
