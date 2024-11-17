@@ -33,6 +33,12 @@ The work being done is $O(n)$ because the isSorted function checks if each permu
 
 With those added together, you would get $O(n + n!)$. This would give us $O(n!)$ as the worst-case scenario for this function. 
 
+**Response to Questions:**
+
+I thought it was infinite time because, according to the $n!$, if we had an array possibly greater than 15, then it would probably exceed the computational level at which a computer could do it effectively. Then isSorted() is not being called once. With genPerm, it is calling isSorted to check to see if it is sorted. With genPerm generating permutations it will make $O(n!)$ and when it exceeds pass 15 in an array then the number is a little to big. When isSorted() is called it is checking each array to see if it is sorted making $O(n)$ for the worst-case. 
+
+For the worst case of this code, it would be $O(n + n!)$.
+
 ## Mistake
 If I am going to be honest I do not know why I wrote arr[a]. I think I had in my head to write arr[i-1] but for some reason, I typed arr[a]. When I saw the error with the counter-example I was a little lost on what it was asking for. I tried doing the debugging myself and then I gave it three tries and then I gave up after that and asked ChatGPT what it was asking. Then it said I had arr[a] instead of arr[i-1] and I thought that was my mistake. After that, I started to just read each line of my code and make sure I had it where I want it to be. It was a simple typo on my part and I was not reading my code deeply enough to realize that I had made that mistake. 
 ## Sources
