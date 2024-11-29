@@ -25,12 +25,12 @@ most important part. Add your answer to this markdown file.
 ## Answer 
 Let's start with the best-case runtime analysis. For the best case that would be a sorted list that was put through the algorithm. This will give you a run time $O(n)$. 
 
-For the worst-case runtime analysis. This would be a reversed sorted list which will give you a runtime of $O(n + n!)$. 
+For the worst-case runtime analysis. This would be a reversed sorted list which will give you a runtime of $O(n * n!)$. 
 
 If we were to randomly generate permutations without memory instead of systematically trying them the chances of success would be $1/{n!}$ to generate a correct sorted list. 
 
 ## Mistake
-If I am going to be honest I do not know why I wrote arr[a]. I think I had in my head to write arr[i-1] but for some reason, I typed arr[a]. When I saw the error with the counter-example I was a little lost on what it was asking for. I tried doing the debugging myself and then I gave it three tries and then I gave up after that and asked ChatGPT what it was asking. Then it said I had arr[a] instead of arr[i-1] and I thought that was my mistake. After that, I started to just read each line of my code and make sure I had it where I want it to be. It was a simple typo on my part and I was not reading my code deeply enough to realize that I had made that mistake. 
+If I am going to be honest I do not know why I wrote arr[a]. I think I had in my head to write arr[i-1] but for some reason, I typed arr[a]. When I saw the error with the counter-example I was a little lost on what it was asking for. I tried doing the debugging myself and then I gave it three tries and then I gave up after that and asked ChatGPT what it was asking. Then it said I had arr[a] instead of arr[i-1] and I thought that was my mistake. After that, I started to just read each line of my code and make sure I had it where I want it to be. It was a simple typo on my part and I was not reading my code deeply enough to realize that I had made that mistake. The GenPerm is going through it multiple times so you have to multiple it to n!.
 ## Sources
 I watched a YouTube (https://www.youtube.com/watch?v=t2Q2tc0V8SY) video on brute force sorting to better understand how it works. I also looked at Nolan Berg's and Cian Melker's repos so I could get a better understanding of how to write the code, which I implemented myself. All the comments you see in the code are generalizations of what their code did but I wrote it in my own words. The only thing I used AI on was the change for [a-1] to arr[i-1] because I was confused about what the error message was saying I asked ChatGPT about it and it said to change this and then my code worked. 
 
